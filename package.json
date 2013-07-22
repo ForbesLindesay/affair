@@ -1,6 +1,6 @@
 {
   "name": "affair",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cheating on event emitters with mixins",
   "browser": "./browser.js",
   "keywords": [],
