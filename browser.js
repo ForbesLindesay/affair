@@ -1,5 +1,7 @@
+'use strict'
+
 var closest = require('closest')
-var Emitter = require('./index.js')
+var Emitter = require('./core.js')
 
 module.exports = BrowserEmitter
 function BrowserEmitter(obj, parent) {
