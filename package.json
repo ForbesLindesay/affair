@@ -2,6 +2,7 @@
   "name": "affair",
   "version": "0.0.2",
   "description": "Cheating on event emitters with mixins",
+  "browser": "./browser.js",
   "keywords": [],
   "dependencies": {
     "closest": "0.0.1"

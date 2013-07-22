@@ -1,6 +1,7 @@
 var closest = require('closest')
 var Emitter = require('./index.js')
 
+module.exports = BrowserEmitter
 function BrowserEmitter(obj, parent) {
   if (arguments.length === 0) {
     if (this instanceof Emitter) {
