@@ -1,6 +1,6 @@
 {
   "name": "affair",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Cheating on event emitters with mixins",
   "keywords": [],
   "dependencies": {},
