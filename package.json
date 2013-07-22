@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Cheating on event emitters with mixins",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "closest": "0.0.1"
+  },
   "devDependencies": {
     "mocha": "*"
   },
