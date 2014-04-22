@@ -2,9 +2,9 @@
 
 Cheating on event emitters with mixins and special browser NodeElement handling
 
-[![Build Status](https://travis-ci.org/ForbesLindesay/affair.png?branch=master)](https://travis-ci.org/ForbesLindesay/affair)
-[![Dependency Status](https://gemnasium.com/ForbesLindesay/affair.png)](https://gemnasium.com/ForbesLindesay/affair)
-[![NPM version](https://badge.fury.io/js/affair.png)](http://badge.fury.io/js/affair)
+[![Build Status](https://img.shields.io/travis/ForbesLindesay/affair/master.svg)](https://travis-ci.org/ForbesLindesay/affair)
+[![Dependency Status](https://img.shields.io/gemnasium/ForbesLindesay/affair.svg)](https://gemnasium.com/ForbesLindesay/affair)
+[![NPM version](https://img.shields.io/npm/v/affair.svg)](http://badge.fury.io/js/affair)
 
 ## Installation
 
