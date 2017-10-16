@@ -97,17 +97,37 @@ function testEmitter(obj) {
 
   describe('.off()', function () {
     it('should remove all listeners if arguments are omitted', function () {
-      assert.deepEqual(obj.on('foo', function () {}).on('bar', function () {}).off()._events, {});
+      obj.on('foo', function () {
+        assert(false, 'Should have removed listener');
+      }).on('bar', function () {
+        assert(false, 'Should have removed listener');
+      }).off();
+      obj.emit('foo');
+      obj.emit('bar');
     })
 
     it('should remove all listeners for `event`', function () {
-      assert.deepEqual(obj.on('foo', function () {}).off('foo')._events, {'foo': null});
+      var calledBar = false;
+      obj.on('foo', function () {
+        assert(false, 'Should have removed listener');
+      }).on('bar', function () {
+        calledBar = true;
+      }).off('foo');
+      obj.emit('foo');
+      obj.emit('bar');
+      assert(calledBar, 'Should have only remove named listener');
     })
 
     it('should remove the given `listener` from `event`', function () {
-      assert.deepEqual(obj.on('foo', console.log).on('foo', console.dir)
-        .off('foo', console.log)
-        .listeners('foo'), [console.dir]);
+      var calledOther = false;
+      function listenerToRemove() {
+        assert(false, 'Should have removed listener');
+      }
+      obj.on('foo', listenerToRemove).on('foo', function () {
+        calledOther = true;
+      }).off('foo', listenerToRemove);
+      obj.emit('foo');
+      assert(calledBar, 'Should have only remove matching listener');
     })
   })
 }
