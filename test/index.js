@@ -127,7 +127,7 @@ function testEmitter(obj) {
         calledOther = true;
       }).off('foo', listenerToRemove);
       obj.emit('foo');
-      assert(calledBar, 'Should have only remove matching listener');
+      assert(calledOther, 'Should have only remove matching listener');
     })
   })
 }
