@@ -29,8 +29,7 @@ function Emitter(obj) {
   for (var k in proto) {
     if (typeof proto[k] === 'function') obj[k] = proto[k]
   }
-  obj.off = off
-  EventEmitter.call(obj)
+  obj.off = off;
   return obj
 }
 Emitter.prototype = Object.create(proto)
