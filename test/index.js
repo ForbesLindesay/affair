@@ -7,7 +7,11 @@ emitter(Person.prototype)
 
 describe('Mixin to prototype: emitter(Person.prototype)', function () {
   it('should mixin emitter', function () {
-    assert(!person._events || Person.prototype._events !== person._events)
+    var p2 = new Person();
+    p2.on('foo', function () {
+      assert(false, 'separate instances should not interact');
+    });
+    person.emit('foo');
   })
 
   it('should not modify the constructor`', function () {
