@@ -8,7 +8,7 @@
     "closest": "0.0.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": ">=7.0.1"
   },
   "scripts": {
     "test": "mocha -R spec"
